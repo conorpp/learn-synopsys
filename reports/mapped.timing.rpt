@@ -1,0 +1,101 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : mul
+Version: H-2013.03-SP4
+Date   : Thu Mar 17 16:15:16 2016
+****************************************
+
+Operating Conditions: scx3_cmos8rf_rvt_tt_1p2v_25c   Library: scx3_cmos8rf_rvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: A[2] (input port)
+  Endpoint: X[63] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 f
+  A[2] (in)                                               0.00       0.00 f
+  mult_3/a[2] (mul_DW_mult_uns_1)                         0.00       0.00 f
+  mult_3/U1778/Y (XOR2X1TF)                               0.11       0.11 f
+  mult_3/U1772/Y (AND3X2TF)                               0.14       0.25 f
+  mult_3/U1927/Y (CLKBUFX2TF)                             0.17       0.42 f
+  mult_3/U1618/Y (AOI222XLTF)                             0.32       0.73 r
+  mult_3/U1617/Y (OAI21X1TF)                              0.08       0.82 f
+  mult_3/U1616/Y (XOR2X1TF)                               0.11       0.92 f
+  mult_3/U288/CO (ADDHXLTF)                               0.15       1.07 f
+  mult_3/U287/CO (CMPR32X2TF)                             0.19       1.26 f
+  mult_3/U286/CO (CMPR32X2TF)                             0.20       1.46 f
+  mult_3/U285/CO (CMPR32X2TF)                             0.20       1.66 f
+  mult_3/U284/CO (CMPR32X2TF)                             0.20       1.85 f
+  mult_3/U283/CO (CMPR32X2TF)                             0.20       2.05 f
+  mult_3/U282/CO (CMPR32X2TF)                             0.20       2.24 f
+  mult_3/U281/CO (CMPR32X2TF)                             0.20       2.44 f
+  mult_3/U280/CO (CMPR32X2TF)                             0.20       2.64 f
+  mult_3/U279/CO (CMPR32X2TF)                             0.20       2.83 f
+  mult_3/U278/CO (CMPR32X2TF)                             0.20       3.03 f
+  mult_3/U277/CO (CMPR32X2TF)                             0.20       3.22 f
+  mult_3/U276/CO (CMPR32X2TF)                             0.20       3.42 f
+  mult_3/U275/CO (CMPR32X2TF)                             0.20       3.61 f
+  mult_3/U274/CO (CMPR32X2TF)                             0.20       3.81 f
+  mult_3/U273/CO (CMPR32X2TF)                             0.20       4.01 f
+  mult_3/U272/CO (CMPR32X2TF)                             0.20       4.20 f
+  mult_3/U271/CO (CMPR32X2TF)                             0.20       4.40 f
+  mult_3/U270/CO (CMPR32X2TF)                             0.20       4.59 f
+  mult_3/U269/CO (CMPR32X2TF)                             0.20       4.79 f
+  mult_3/U268/CO (CMPR32X2TF)                             0.20       4.98 f
+  mult_3/U267/CO (CMPR32X2TF)                             0.20       5.18 f
+  mult_3/U266/CO (CMPR32X2TF)                             0.20       5.38 f
+  mult_3/U265/CO (CMPR32X2TF)                             0.20       5.57 f
+  mult_3/U264/CO (CMPR32X2TF)                             0.20       5.77 f
+  mult_3/U263/CO (CMPR32X2TF)                             0.20       5.96 f
+  mult_3/U262/CO (CMPR32X2TF)                             0.20       6.16 f
+  mult_3/U261/CO (CMPR32X2TF)                             0.20       6.35 f
+  mult_3/U260/CO (CMPR32X2TF)                             0.20       6.55 f
+  mult_3/U259/CO (CMPR32X2TF)                             0.20       6.75 f
+  mult_3/U258/CO (CMPR32X2TF)                             0.20       6.94 f
+  mult_3/U257/CO (CMPR32X2TF)                             0.20       7.14 f
+  mult_3/U256/CO (CMPR32X2TF)                             0.20       7.33 f
+  mult_3/U255/CO (CMPR32X2TF)                             0.20       7.53 f
+  mult_3/U254/CO (CMPR32X2TF)                             0.20       7.73 f
+  mult_3/U253/CO (CMPR32X2TF)                             0.20       7.92 f
+  mult_3/U252/CO (CMPR32X2TF)                             0.20       8.12 f
+  mult_3/U251/CO (CMPR32X2TF)                             0.20       8.31 f
+  mult_3/U250/CO (CMPR32X2TF)                             0.20       8.51 f
+  mult_3/U249/CO (CMPR32X2TF)                             0.20       8.71 f
+  mult_3/U248/CO (CMPR32X2TF)                             0.20       8.90 f
+  mult_3/U247/CO (CMPR32X2TF)                             0.20       9.10 f
+  mult_3/U246/CO (CMPR32X2TF)                             0.20       9.29 f
+  mult_3/U245/CO (CMPR32X2TF)                             0.20       9.49 f
+  mult_3/U244/CO (CMPR32X2TF)                             0.20       9.69 f
+  mult_3/U243/CO (CMPR32X2TF)                             0.20       9.88 f
+  mult_3/U242/CO (CMPR32X2TF)                             0.20      10.08 f
+  mult_3/U241/CO (CMPR32X2TF)                             0.20      10.27 f
+  mult_3/U240/CO (CMPR32X2TF)                             0.20      10.47 f
+  mult_3/U239/CO (CMPR32X2TF)                             0.20      10.67 f
+  mult_3/U238/CO (CMPR32X2TF)                             0.20      10.86 f
+  mult_3/U237/CO (CMPR32X2TF)                             0.20      11.06 f
+  mult_3/U236/CO (CMPR32X2TF)                             0.20      11.26 f
+  mult_3/U235/CO (CMPR32X2TF)                             0.20      11.45 f
+  mult_3/U234/CO (CMPR32X2TF)                             0.20      11.65 f
+  mult_3/U233/CO (CMPR32X2TF)                             0.20      11.84 f
+  mult_3/U232/CO (CMPR32X2TF)                             0.20      12.04 f
+  mult_3/U231/CO (CMPR32X2TF)                             0.20      12.24 f
+  mult_3/U230/CO (CMPR32X2TF)                             0.20      12.43 f
+  mult_3/U229/CO (CMPR32X2TF)                             0.20      12.63 f
+  mult_3/U228/CO (CMPR32X2TF)                             0.19      12.82 f
+  mult_3/U226/Y (XOR2X1TF)                                0.09      12.91 f
+  mult_3/product[63] (mul_DW_mult_uns_1)                  0.00      12.91 f
+  X[63] (out)                                             0.00      12.91 f
+  data arrival time                                                 12.91
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

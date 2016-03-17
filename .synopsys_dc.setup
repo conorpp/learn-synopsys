@@ -1,0 +1,74 @@
+#
+# Design  : mul
+# Library : IBM 130 
+#
+# Conor
+#
+
+
+# Search Path
+#set search_path "$search_path ./report ./syn ./db ./"
+
+# Setup libraries
+set work_dir "."
+set design_name mul
+set rtl_path $work_dir/verilog
+set netlist $work_dir/netlist
+set reports $work_dir/reports
+set src_files [ls $rtl_path/*.v]
+set mw_design_library ${design_name}_LIB
+
+### IBM library 
+set cell_lib [getenv "IBM180"]
+set tech 130nm
+set tech_lib scx3_cmos8rf_rvt_tt_1p2v_25c
+set target_library "$cell_lib/sc-x/synopsys/scx3_cmos8rf_rvt_tt_1p2v_25c.db" 
+set link_library "$cell_lib/sc-x/synopsys/scx3_cmos8rf_rvt_tt_1p2v_25c.db" 
+set symbol_library "generic.sdb"
+set synthetic_library [list dw_foundation.sldb]
+
+# Define Work Library Location
+# exec rm -rf ./work
+define_design_lib work -path ./work
+
+# Design Compiler
+#source syn/synthesis.tcl
+
+#exit
+
+#/* ================================================= */ 
+#/* General configuration settings. */ 
+#/* ================================================= */ 
+
+# Warn if latches are inferred 
+#set hdlin_check_no_latch true 
+
+# Treat text between translate statements as comments 
+# set hdlin_translate_off_skip_text true 
+
+# 
+# set verilogout_write_components true 
+
+# Determines the name that will be used for the architecture of the write -f verilog command 
+# set verilogout_architecture_name "structural" 
+
+# Turn tri state nets from "tri" to "wire" 
+# set verilogout_no_tri true 
+
+# Treat text between translate statements as comments 
+# set hdlin_translate_off_skip_text true 
+
+# List of package commands 
+# set vhdlout_use_packages [list IEEE.std_logic_1164.ALL] 
+
+# Write out component declarations for cells mapped to a technology library. 
+#set vhdlout_write_components true
+# Determines the name that will be used for the architecture of the write -f vhdl command 
+# set vhdlout_architecture_name "structural" 
+
+# Treat text between translate statements as comments 
+# set hdlin_translate_off_skip_text true 
+
+# Specify the styel to use in naming an individual port member 
+# set bus_naming_style {%s[%d]}
+

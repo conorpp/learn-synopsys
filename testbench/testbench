@@ -1,0 +1,49 @@
+#! /usr/local/bin/vvp
+:ivl_version "10.1 (stable)" "(v10_1)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0xa6f5b0 .scope module, "tb_mul" "tb_mul" 2 1;
+ .timescale 0 0;
+v0xa806b0_0 .var "A", 31 0;
+v0xa80770_0 .var "B", 31 0;
+v0xa80840_0 .net "X", 63 0, L_0xa90c30;  1 drivers
+S_0xa6f730 .scope module, "m0" "mul" 2 7, 3 1 0, S_0xa6f5b0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 32 "A"
+    .port_info 1 /INPUT 32 "B"
+    .port_info 2 /OUTPUT 64 "X"
+v0xa4c7c0_0 .net "A", 31 0, v0xa806b0_0;  1 drivers
+v0xa80090_0 .net "B", 31 0, v0xa80770_0;  1 drivers
+v0xa80170_0 .net "X", 63 0, L_0xa90c30;  alias, 1 drivers
+v0xa80260_0 .net *"_s0", 63 0, L_0xa80940;  1 drivers
+L_0x7fc059864018 .functor BUFT 1, C4<00000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0xa80340_0 .net *"_s3", 31 0, L_0x7fc059864018;  1 drivers
+v0xa80470_0 .net *"_s4", 63 0, L_0xa90af0;  1 drivers
+L_0x7fc059864060 .functor BUFT 1, C4<00000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0xa80550_0 .net *"_s7", 31 0, L_0x7fc059864060;  1 drivers
+L_0xa80940 .concat [ 32 32 0 0], v0xa806b0_0, L_0x7fc059864018;
+L_0xa90af0 .concat [ 32 32 0 0], v0xa80770_0, L_0x7fc059864060;
+L_0xa90c30 .arith/mult 64, L_0xa80940, L_0xa90af0;
+    .scope S_0xa6f5b0;
+T_0 ;
+    %pushi/vec4 7723, 0, 32;
+    %store/vec4 v0xa806b0_0, 0, 32;
+    %pushi/vec4 247711, 0, 32;
+    %store/vec4 v0xa80770_0, 0, 32;
+    %end;
+    .thread T_0;
+    .scope S_0xa6f5b0;
+T_1 ;
+    %vpi_call 2 19 "$monitor", "A * B = ", v0xa80840_0 {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "tb_mul.v";
+    "../verilog/mul.v";
